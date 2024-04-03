@@ -3,9 +3,38 @@
 @tailwind utilities;
 
 #root{
+  --primary: #ead637;
+
   width: 100%;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.active{
+  background-color:var(--primary);
+  color: black;
+}
+
+li{
+  padding: 5px;
+}
+
+ul{
+  gap: 3rem
+}
+
+@media (max-width: 600px) {
+  li{
+    font-size: small;
+  }
+
+  .logo{
+    max-width: 80px;
+  }
+  ul{
+    gap: 0.6rem
+  }
+
 }
