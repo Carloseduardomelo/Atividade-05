@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "/Group 1.svg";
 
 
@@ -10,11 +11,11 @@ const Hearder = () => {
       <div>
         <nav >
           <ul className="flex gap-12 items-center justify-center font-fontProjeto font-semibold">
-            <li>Home</li>
-            <li>Front-End</li>
-            <li>Back-End</li>
-            <li>Fukk-Stack</li>
-            <li>Mobile</li>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/FrontEnd"}>Front-End</Link></li>
+            <li><Link to={"/BackEnd"}>Back-End</Link></li>
+            <li><Link to={"/Mobile"}>Mobile</Link></li>
+            <li><Link to={"/FullStack"}>FullStack</Link></li>
           </ul>
         </nav>
       </div>
